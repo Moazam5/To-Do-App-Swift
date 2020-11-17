@@ -20,23 +20,19 @@ class CategoryTableViewController: SwipeTableViewController {
         super.viewDidLoad()
         let rightBarButton = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector(addCategoryButtonPressed))
         rightBarButton.tintColor = ContrastColorOf(.red, returnFlat: true)
-        self.navigationItem.rightBarButtonItem = rightBarButton
+      //  self.navigationItem.rightBarButtonItem = rightBarButton
 
         tableView.register(UINib(nibName: "CategoryTableViewCell", bundle: nil), forCellReuseIdentifier: "categoryCell")
         tableView.separatorStyle = .none
-        configureNavBar()
+       // configureNavBar()
         loadData()
         
     }
     
+
+    
     func configureNavBar()
     {
-        //
-        //           self.navigationController?.navigationBar.setBackgroundImage(UIImage(), for: .default) //UIImage.init(named: "transparent.png")
-        //           self.navigationController?.navigationBar.shadowImage = UIImage()
-        //           self.navigationController?.navigationBar.isTranslucent = true
-        //           self.navigationController?.view.backgroundColor = .red
-        
         if #available(iOS 13.0, *) {
             let navBarAppearance = UINavigationBarAppearance()
             navBarAppearance.configureWithOpaqueBackground()
@@ -55,9 +51,15 @@ class CategoryTableViewController: SwipeTableViewController {
         guard let navBar = navigationController?.navigationBar else { fatalError("Navigation controller does not exist.")
         }
         navBar.backgroundColor = UIColor(named: "#1D9BF6")
-
+        configureNavBar()
+        
+        loadData()
     }
     
+    @IBAction func addCategoryButton(_ sender: UIBarButtonItem)
+    {
+        
+    }
     @objc func addCategoryButtonPressed()
     {
         var textField = UITextField()
@@ -104,6 +106,7 @@ class CategoryTableViewController: SwipeTableViewController {
             cell.itemsCompletedLabel.text = "\( 0) / \(itemsArray?.count ?? 0) item"
             cell.itemsCompletedLabel.textColor = ContrastColorOf(UIColor(hexString: item.color!)!, returnFlat: true)
             cell.itemsCompletedLabel.isHidden = true
+            cell.iconImageView.image = UIImage(named: item.image ?? "money.jpg")
             if item.priority {
                 cell.preferredImageView.isHidden = false
                 print("called")

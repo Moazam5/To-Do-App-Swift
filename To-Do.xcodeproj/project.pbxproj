@@ -16,10 +16,13 @@
 		594B4A3025544FBC008BD9F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 594B4A2F25544FBC008BD9F9 /* Assets.xcassets */; };
 		594B4A3325544FBC008BD9F9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 594B4A3125544FBC008BD9F9 /* LaunchScreen.storyboard */; };
 		594D7402255CF69E00CA4E2B /* money.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 594D7401255CF69E00CA4E2B /* money.jpg */; };
-		594D7405255D041E00CA4E2B /* neat.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 594D7404255D041E00CA4E2B /* neat.jpg */; };
+		594D7405255D041E00CA4E2B /* book-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 594D7404255D041E00CA4E2B /* book-1.jpg */; };
 		594D7408255D075000CA4E2B /* neat-1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 594D7407255D075000CA4E2B /* neat-1.jpg */; };
 		594D740C255D858600CA4E2B /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 594D740A255D858600CA4E2B /* ItemCell.swift */; };
 		594D740D255D858600CA4E2B /* ItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 594D740B255D858600CA4E2B /* ItemCell.xib */; };
+		5977E1432563B20300992209 /* selectCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5977E1422563B20300992209 /* selectCategoryViewController.swift */; };
+		5977E1492563BE3700992209 /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5977E1482563BE3700992209 /* CustomCollectionViewCell.swift */; };
+		59E1009A255F19ED00C41803 /* hamburger.png in Resources */ = {isa = PBXBuildFile; fileRef = 59E10099255F19ED00C41803 /* hamburger.png */; };
 		59F938142556F99E007DADF5 /* ContactsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59F938122556F99E007DADF5 /* ContactsTableViewController.swift */; };
 		59F938152556F99E007DADF5 /* ContactsTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 59F938132556F99E007DADF5 /* ContactsTableViewController.xib */; };
 		59F9381C25572DAB007DADF5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 59F9381B25572DAB007DADF5 /* Main.storyboard */; };
@@ -41,10 +44,13 @@
 		594B4A3225544FBC008BD9F9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		594B4A3425544FBC008BD9F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		594D7401255CF69E00CA4E2B /* money.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = money.jpg; sourceTree = "<group>"; };
-		594D7404255D041E00CA4E2B /* neat.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = neat.jpg; sourceTree = "<group>"; };
+		594D7404255D041E00CA4E2B /* book-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "book-1.jpg"; sourceTree = "<group>"; };
 		594D7407255D075000CA4E2B /* neat-1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "neat-1.jpg"; sourceTree = "<group>"; };
 		594D740A255D858600CA4E2B /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 		594D740B255D858600CA4E2B /* ItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCell.xib; sourceTree = "<group>"; };
+		5977E1422563B20300992209 /* selectCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = selectCategoryViewController.swift; sourceTree = "<group>"; };
+		5977E1482563BE3700992209 /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
+		59E10099255F19ED00C41803 /* hamburger.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hamburger.png; sourceTree = "<group>"; };
 		59F938122556F99E007DADF5 /* ContactsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsTableViewController.swift; sourceTree = "<group>"; };
 		59F938132556F99E007DADF5 /* ContactsTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ContactsTableViewController.xib; sourceTree = "<group>"; };
 		59F9381B25572DAB007DADF5 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -95,7 +101,8 @@
 				59F9382925574925007DADF5 /* Supporting Files */,
 				594B4A3425544FBC008BD9F9 /* Info.plist */,
 				594D7401255CF69E00CA4E2B /* money.jpg */,
-				594D7404255D041E00CA4E2B /* neat.jpg */,
+				594D7404255D041E00CA4E2B /* book-1.jpg */,
+				59E10099255F19ED00C41803 /* hamburger.png */,
 				594D7407255D075000CA4E2B /* neat-1.jpg */,
 				59135EDC255A4BD800B96DD7 /* delete.png */,
 			);
@@ -118,6 +125,8 @@
 				59135EDF255A546900B96DD7 /* SwipeTableViewController.swift */,
 				59F938542558D1F5007DADF5 /* CategoryTableViewController.swift */,
 				59F9381E25572E28007DADF5 /* ItemViewController.swift */,
+				5977E1422563B20300992209 /* selectCategoryViewController.swift */,
+				5977E1482563BE3700992209 /* CustomCollectionViewCell.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -225,12 +234,13 @@
 				594D7402255CF69E00CA4E2B /* money.jpg in Resources */,
 				594D740D255D858600CA4E2B /* ItemCell.xib in Resources */,
 				594B4A3025544FBC008BD9F9 /* Assets.xcassets in Resources */,
+				59E1009A255F19ED00C41803 /* hamburger.png in Resources */,
 				59F938152556F99E007DADF5 /* ContactsTableViewController.xib in Resources */,
 				59135F1F255B335000B96DD7 /* CategoryTableViewCell.xib in Resources */,
 				59135EDD255A4BD800B96DD7 /* delete.png in Resources */,
 				594D7408255D075000CA4E2B /* neat-1.jpg in Resources */,
 				59F9381C25572DAB007DADF5 /* Main.storyboard in Resources */,
-				594D7405255D041E00CA4E2B /* neat.jpg in Resources */,
+				594D7405255D041E00CA4E2B /* book-1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -287,11 +297,13 @@
 				59F938142556F99E007DADF5 /* ContactsTableViewController.swift in Sources */,
 				594D740C255D858600CA4E2B /* ItemCell.swift in Sources */,
 				594B4A2725544FB8008BD9F9 /* AppDelegate.swift in Sources */,
+				5977E1432563B20300992209 /* selectCategoryViewController.swift in Sources */,
 				59135EE0255A546900B96DD7 /* SwipeTableViewController.swift in Sources */,
 				59F9381F25572E28007DADF5 /* ItemViewController.swift in Sources */,
 				594B4A2925544FB8008BD9F9 /* SceneDelegate.swift in Sources */,
 				59F938552558D1F6007DADF5 /* CategoryTableViewController.swift in Sources */,
 				59135F1E255B335000B96DD7 /* CategoryTableViewCell.swift in Sources */,
+				5977E1492563BE3700992209 /* CustomCollectionViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

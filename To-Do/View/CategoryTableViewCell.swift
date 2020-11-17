@@ -13,7 +13,7 @@ class CategoryTableViewCell: UITableViewCell  {
     
 
     @IBOutlet weak var categoryLabel: UILabel!
-        @IBOutlet weak var iconImageView: UIImageView!
+    @IBOutlet weak var iconImageView: UIImageView!
     @IBOutlet weak var itemsCompletedLabel: UILabel!
     @IBOutlet weak var nextImageView: UIImageView!
     @IBOutlet weak var preferredImageView: UIImageView!
@@ -24,7 +24,7 @@ class CategoryTableViewCell: UITableViewCell  {
         // Initialization code
         containerView.layer.cornerRadius = containerView.frame.height / 5
         iconImageView.layer.cornerRadius = iconImageView.frame.height / 2
-        iconImageView.image = UIImage(named: "money.jpg")
+     //   iconImageView.image = UIImage(named: "money.jpg")
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
